@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Asian Cuisine</h1>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card1" onclick="showPopup('Japanese Cuisine)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Oseti.jpg" class="card-img-top" alt="Product 1 Image">
+        </div>
+        <div class="card2" onclick="showPopup('Korean Cuisine')">
+          <img src="https://c4.wallpaperflare.com/wallpaper/310/297/115/food-korea-korean-wallpaper-preview.jpg" class="card-img-top" alt="Product 2 Image">
+        </div>
+        <div class="card3" onclick="showPopup('Chinese Cuisine')">
+          <img src="https://voicesfromthekitchen.org/wp-content/uploads/2021/10/Chinese-Cuisine-1.jpg" class="card-img-top" alt="Product 3 Image">
+        </div>
+  </div>
+  
+  <div id="popup" class="popup">
+    <div id="popupContent"></div>
+    <button class="btn btn-secondary popupButton" onclick="hidePopup()">Menu</button>
+  </div>
+  
+
+<script src="./JS/script.js"></script>
+</body>
+</html>
